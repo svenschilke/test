@@ -7,7 +7,10 @@ signal = np.sin(np.linspace(1,20,100))
 
 plt.plot(signal)
 
-if max(signal) > 10:
-    print("Hooray")
-else:
-    print("non horray")
+def hooray(sig):
+    phrase = "Nix Hooray"
+    if max(sig) > .1:
+        phrase = "Hooray"
+    return phrase
+
+hooray(signal)
